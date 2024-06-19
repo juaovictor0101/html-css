@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+        nav {
+            background-color: rgb(133, 132, 132);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px  rgba(0, 0, 0, 0.315);
+            border-radius: 10px;
+            /* primeiro numero = deslocamento horizontal
+            segundo numero= deslocamento vertical
+            terceiro numero= blur, o quanto fica "o quanto fica esfumçado*/
+
+
+            }
+        nav>a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav>a:hover{
+            text-decoration: underline;
+            
+        }
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 20px;
+            
+            
+            
+        }
+        article{
+            background-color: lightgray  ;
+            padding: 5px;
+            border-radius: 10px;
+            
+        }
+
+        article > aside {
+             background-color: rgb(165, 165, 165);   
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 1px;
+            margin: 0px;
+            text-align: center;
+        }
+        div#bola 
+        {   height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+        /*
+            Como colocar bordas personalizadas: 
+            se usa os três comandos
+            border-image-source: url() =  aqui se adciona a arte da borda
+            border-image-slice:27 = aqui se coloca quntas vezes essa porde será cortada
+            border-image-repeat:repeat = aqui se coloca quantas vezes será repetida
+
+            short hand disso tudo é: *border-image: url 27 repeat*
+        */
+    </style>
+</head>
+<body>
+    <header> 
+        <h1> meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos"
+        
+        ></section>
+        <section id="noticiais"></section>
+            <article>
+                <h2> Noticias por ze bolinha</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, quod commodi ipsam reprehenderit dignissimos quis rem? Saepe a adipisci, quasi ratione minima eligendi quaerat quae fugiat magni, repellat ducimus consequuntur.</p>
+                <aside>
+                    <p> artigo escrito pose ze bolinha</p>
+                </aside>
+            </article>
+            <article></article>
+    </main>
+    <footer>
+        <p>made by jaum enterprises</p>
+    </footer>
+    <div id= "bola"></div>
+</body>
+</html>

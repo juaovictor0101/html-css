@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  =  children 
+        
+        */
+            body{
+                    font-family: Arial, Helvetica, sans-serif;
+                    
+            }
+            a{ 
+                color: red;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            a:visited{
+                color: darkred;
+            }
+            a:hover{
+                text-decoration: underline;
+                color: black;
+
+            }
+            a:active{ 
+                    color: yellow;
+            }
+            a::after{
+                    content: '[link]';
+                    text-decoration: none;
+                    font-weight: normal;
+                    color: #ffff00;
+            }
+            a::before{
+                        content: '[link]';
+                        text-decoration: none;
+                        font-weight: normal;
+                        color: #ffff00;
+            }
+    </style>
+</head>
+<body>
+    <h1> Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/____jaum/" target="_blank">Meu instagram</a></li>
+        <li><a href="https://twitter.com/juaovictor____">Meu X</a></li>
+        <li><a href="https://open.spotify.com/user/22ylpwi6yvg7mrkla4pzbw34q">Meu spotify</a></li>
+    </ul>
+    
+</body>
+</html>

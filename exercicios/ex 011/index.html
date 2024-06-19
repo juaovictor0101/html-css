@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1> Imagem dinamica</h1>
+    <p> tente abrir esse site em varios dispositivos diferentes</p>
+    
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p(p).png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-g(m).png"  type="image/png">
+        <img src="imagens/foto-m(g).png" alt=" imagem flexivel">
+    </picture>
+    
+    <h1> Reproduzindo audio em HTML</h1>
+    <p> Vamos aprender a reproduzir audio no site.</p>
+    <audio src="midia/audio para teste do site.mp3" controls autoplay></audio>
+    <!-- Nem todos os navegadores são compativeis sempre com MP3, alguns outros que podem ser usados são WAV e OGG-->
+   
+    <audio preload="metadata" autoplay  loop>
+        <source src="midia/audio para teste do site.mp3" type="audio/mpeg"> <!-- exemplo de media type de MP3-->
+        <source src="midia/audio para teste do site.ogg" type="audio/ogg"> <!-- exemplo de media type de ogg-->
+        <source src="midia/audio para teste do site.wav" type="audio/wav">
+        <!-- exemplo de media type de wav(evitar o uso desses por serem arquivos grandes e pesados)--> 
+        <p> Infelizmente seu navegador não consegue reproduzir áudio</p>
+        <a href="midia/audio para teste do site.mp3"> Clique aqui para baixar o arquivo</a>
+    </audio>
+</body>
+</html>
